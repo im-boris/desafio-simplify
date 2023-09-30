@@ -6,6 +6,7 @@ import com.br.backend.simplify.arquitetura.IUseCaseRunner;
 import com.br.backend.simplify.infraestrutura.arquitetura.UseCaseMapper;
 import com.br.backend.simplify.pojo.contexto.Contexto;
 import com.br.backend.simplify.pojo.requisicao.Requisicao;
+import com.br.backend.simplify.pojo.resposta.Resposta;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
@@ -23,15 +24,19 @@ public class UseCaseRunner implements IUseCaseRunner {
 
 
     @Transactional(propagation = Propagation.REQUIRES_NEW)
-    public <C extends Contexto> C run(Requisicao requisicao) throws Exception {
+    public <R extends Resposta> R run(Requisicao requisicao) throws Exception {
 
         UseCaseMapper useCase = getUseCase(requisicao);
         IUseCase beanUseCase = getUseCaseBean(useCase);
         Contexto contextoUseCase = useCase.getContexto();
-        contextoUseCase.setRequisicao(requisicao);
-        disparaFluxo(beanUseCase, contextoUseCase);
+        Resposta respostaUseCase = useCase.getResposta();
 
-        return (C)contextoUseCase;
+        contextoUseCase.setRequisicao(requisicao);
+        respostaUseCase.setContexto(contextoUseCase);
+
+        disparaFluxo(beanUseCase, contextoUseCase, respostaUseCase);
+
+        return (R)respostaUseCase;
 
     }
 
@@ -43,7 +48,7 @@ public class UseCaseRunner implements IUseCaseRunner {
         return applicationContext.getBean(useCase.getUseCase().getClass());
     }
 
-    private void disparaFluxo(IUseCase useCase, Contexto contexto) throws Exception {
+    private void disparaFluxo(IUseCase useCase, Contexto contexto, Resposta resposta) throws Exception {
 
         useCase.preExecuta(contexto);
         integracaoService.executaIntegracoesPreExecucao(contexto, useCase);
@@ -52,6 +57,8 @@ public class UseCaseRunner implements IUseCaseRunner {
 
         integracaoService.executaIntegracoesPosExecucao(contexto, useCase);
         useCase.posExecuta(contexto);
+
+        useCase.preencheResposta(contexto, resposta);
 
     }
 

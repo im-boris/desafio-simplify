@@ -8,4 +8,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ContextoCadastraTarefa extends Contexto<RequisicaoCadastraTarefaDTO> {
+    private String msgContexto;
+    private Integer numeroContexto;
 }

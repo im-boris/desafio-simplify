@@ -1,4 +1,12 @@
 package com.br.backend.simplify.pojo.negocio.tarefa;
 
-public class RespostaCadastraTarefaDTO {
+import com.br.backend.simplify.pojo.resposta.Resposta;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+public class RespostaCadastraTarefaDTO extends Resposta {
 }

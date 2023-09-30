@@ -13,10 +13,10 @@ public class TarefaService implements TarefaController {
     @Autowired
     private IUseCaseRunner useCaseRunner;
 
+
     @Override
     public RespostaCadastraTarefaDTO cadastra(RequisicaoCadastraTarefaDTO dto) throws Exception {
-        useCaseRunner.run(dto);
-        return null;
+        return useCaseRunner.run(dto);
     }
 
 }
