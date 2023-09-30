@@ -11,5 +11,13 @@
 
     <artifactId>simplify-usecase</artifactId>
     <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.br</groupId>
+            <artifactId>simplify-adapters</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 </project>
