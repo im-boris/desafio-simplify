@@ -1,6 +1,6 @@
-package com.br.backend.simplify.pojo.negocio.resposta;
+package com.br.backend.simplify.pojo.arquitetura.resposta;
 
-import com.br.backend.simplify.pojo.negocio.contexto.Contexto;
+import com.br.backend.simplify.pojo.arquitetura.contexto.Contexto;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

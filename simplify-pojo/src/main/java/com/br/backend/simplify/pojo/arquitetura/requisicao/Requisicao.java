@@ -1,4 +1,4 @@
-package com.br.backend.simplify.pojo.negocio.requisicao;
+package com.br.backend.simplify.pojo.arquitetura.requisicao;
 
 import lombok.Getter;
 import lombok.Setter;

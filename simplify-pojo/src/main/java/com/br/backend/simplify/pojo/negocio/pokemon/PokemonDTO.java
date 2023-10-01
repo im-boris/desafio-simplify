@@ -9,5 +9,6 @@ import lombok.*;
 @NoArgsConstructor
 public class PokemonDTO {
     private String nome;
-    private Integer velocidade;
+    private String urlSprite;
+    private Long idPokemon;
 }

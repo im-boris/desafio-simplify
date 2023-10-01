@@ -1,6 +1,6 @@
-package com.br.backend.simplify.pojo.negocio.contexto;
+package com.br.backend.simplify.pojo.arquitetura.contexto;
 
-import com.br.backend.simplify.pojo.negocio.requisicao.Requisicao;
+import com.br.backend.simplify.pojo.arquitetura.requisicao.Requisicao;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

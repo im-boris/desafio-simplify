@@ -2,8 +2,8 @@ package com.br.backend.simplify.infraestrutura.services.integracao;
 
 import com.br.backend.simplify.adapters.arquitetura.DefinicaoIntegracao;
 import com.br.backend.simplify.adapters.arquitetura.IIntegracao;
-import com.br.backend.simplify.pojo.negocio.contexto.Contexto;
-import com.br.backend.simplify.pojo.negocio.integracao.IntegracaoEnum;
+import com.br.backend.simplify.pojo.arquitetura.contexto.Contexto;
+import com.br.backend.simplify.pojo.arquitetura.integracao.IntegracaoEnum;
 import com.br.backend.simplify.adapters.arquitetura.IUseCase;
 import com.br.backend.simplify.adapters.arquitetura.IntegracaoFluxo;
 import org.springframework.beans.factory.annotation.Autowired;

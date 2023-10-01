@@ -1,7 +1,7 @@
 package com.br.backend.simplify.adapters.arquitetura;
 
-import com.br.backend.simplify.pojo.negocio.contexto.Contexto;
-import com.br.backend.simplify.pojo.negocio.resposta.Resposta;
+import com.br.backend.simplify.pojo.arquitetura.contexto.Contexto;
+import com.br.backend.simplify.pojo.arquitetura.resposta.Resposta;
 
 public interface IUseCase<C extends Contexto, R extends Resposta> {
 

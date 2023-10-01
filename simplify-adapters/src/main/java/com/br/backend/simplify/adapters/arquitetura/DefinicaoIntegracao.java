@@ -1,6 +1,6 @@
 package com.br.backend.simplify.adapters.arquitetura;
 
-import com.br.backend.simplify.pojo.negocio.integracao.IntegracaoEnum;
+import com.br.backend.simplify.pojo.arquitetura.integracao.IntegracaoEnum;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
