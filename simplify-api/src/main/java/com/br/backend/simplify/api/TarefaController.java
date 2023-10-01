@@ -1,7 +1,7 @@
 package com.br.backend.simplify.api;
 
-import com.br.backend.simplify.pojo.negocio.tarefa.testearquitetura.RequisicaoTesteArquiteturaDTO;
-import com.br.backend.simplify.pojo.negocio.tarefa.testearquitetura.RespostaTesteArquiteturaDTO;
+import com.br.backend.simplify.pojo.negocio.tarefa.testearquitetura.RequisicaoCadastraPokemonDTO;
+import com.br.backend.simplify.pojo.negocio.tarefa.testearquitetura.RespostaCadastraPokemonDTO;
 import com.br.backend.simplify.pojo.negocio.tarefa.TarefaDTO;
 import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;
@@ -27,6 +27,6 @@ public interface TarefaController {
     TarefaDTO deleta(@PathVariable("id") Long id);
 
     @RequestMapping(value = "/teste", method = RequestMethod.POST)
-    RespostaTesteArquiteturaDTO teste(@Valid @RequestBody RequisicaoTesteArquiteturaDTO requisicao) throws Exception;
+    RespostaCadastraPokemonDTO teste(@Valid @RequestBody RequisicaoCadastraPokemonDTO requisicao) throws Exception;
 
 }

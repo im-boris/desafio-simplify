@@ -8,5 +8,5 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class RespostaTesteArquiteturaDTO extends Resposta {
+public class RespostaCadastraPokemonDTO extends Resposta {
 }

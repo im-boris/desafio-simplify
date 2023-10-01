@@ -6,5 +6,5 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class RequisicaoTesteArquiteturaDTO extends Requisicao {
+public class RequisicaoCadastraPokemonDTO extends Requisicao {
 }

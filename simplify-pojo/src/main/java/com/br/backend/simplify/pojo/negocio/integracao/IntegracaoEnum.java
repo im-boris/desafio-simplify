@@ -7,7 +7,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum IntegracaoEnum {
 
-    INTEGRACAO_XXX("IntegracaoXXX");
+    INTEGRACAO_TESTE("IntegracaoTeste");
 
     private final String nome;
 }

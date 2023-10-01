@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class ContextoTesteArquitetura extends Contexto<RequisicaoTesteArquiteturaDTO> {
+public class ContextoCadastraPokemon extends Contexto<RequisicaoCadastraPokemonDTO> {
     private String msgContexto;
     private Integer numeroContexto;
 }
