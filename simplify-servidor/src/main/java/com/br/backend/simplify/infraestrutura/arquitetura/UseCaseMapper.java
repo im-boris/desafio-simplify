@@ -2,9 +2,9 @@ package com.br.backend.simplify.infraestrutura.arquitetura;
 
 import com.br.backend.simplify.pojo.negocio.contexto.Contexto;
 import com.br.backend.simplify.adapters.arquitetura.IUseCase;
-import com.br.backend.simplify.pojo.negocio.tarefa.RespostaCadastraTarefaDTO;
+import com.br.backend.simplify.pojo.negocio.tarefa.testearquitetura.RespostaTesteArquiteturaDTO;
 import com.br.backend.simplify.pojo.negocio.resposta.Resposta;
-import com.br.backend.simplify.tarefa.usecases.ContextoTesteArquitetura;
+import com.br.backend.simplify.pojo.negocio.tarefa.testearquitetura.ContextoTesteArquitetura;
 import com.br.backend.simplify.tarefa.usecases.UseCaseTesteArquitetura;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public enum UseCaseMapper {
 
-    TESTE_ARQUITETURA(1, new UseCaseTesteArquitetura(), new ContextoTesteArquitetura(), new RespostaCadastraTarefaDTO());
+    TESTE_ARQUITETURA(1, new UseCaseTesteArquitetura(), new ContextoTesteArquitetura(), new RespostaTesteArquiteturaDTO());
 
 
     private Integer codigoRequisicao;

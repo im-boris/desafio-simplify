@@ -11,6 +11,7 @@
 
     <artifactId>simplify-usecase</artifactId>
     <packaging>jar</packaging>
+
     <dependencies>
         <dependency>
             <groupId>com.br</groupId>
