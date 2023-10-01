@@ -1,12 +1,12 @@
 package com.br.backend.simplify.infraestrutura.services.usecase;
 
-import com.br.backend.simplify.arquitetura.IIntegracao;
-import com.br.backend.simplify.arquitetura.IUseCase;
-import com.br.backend.simplify.arquitetura.IUseCaseRunner;
+import com.br.backend.simplify.adapters.arquitetura.IIntegracao;
+import com.br.backend.simplify.adapters.arquitetura.IUseCaseRunner;
 import com.br.backend.simplify.infraestrutura.arquitetura.UseCaseMapper;
-import com.br.backend.simplify.pojo.contexto.Contexto;
-import com.br.backend.simplify.pojo.requisicao.Requisicao;
-import com.br.backend.simplify.pojo.resposta.Resposta;
+import com.br.backend.simplify.pojo.negocio.contexto.Contexto;
+import com.br.backend.simplify.pojo.negocio.requisicao.Requisicao;
+import com.br.backend.simplify.pojo.negocio.resposta.Resposta;
+import com.br.backend.simplify.adapters.arquitetura.IUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;

@@ -12,4 +12,25 @@
     <artifactId>simplify-negocio</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>com.br</groupId>-->
+<!--            <artifactId>simplify-entidade</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.br</groupId>-->
+<!--            <artifactId>simplify-pojo</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>com.br</groupId>
+            <artifactId>simplify-adapters</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
 </project>

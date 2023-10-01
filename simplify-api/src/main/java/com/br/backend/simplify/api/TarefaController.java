@@ -1,7 +1,6 @@
 package com.br.backend.simplify.api;
 
-import com.br.backend.simplify.pojo.negocio.tarefa.RequisicaoCadastraTarefaDTO;
-import com.br.backend.simplify.pojo.negocio.tarefa.RespostaCadastraTarefaDTO;
+import com.br.backend.simplify.pojo.negocio.tarefa.TarefaDTO;
 import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;
 import java.util.List;
@@ -11,18 +10,18 @@ import java.util.List;
 public interface TarefaController {
 
     @RequestMapping(method = RequestMethod.POST)
-    RespostaCadastraTarefaDTO cadastra(@Valid @RequestBody RequisicaoCadastraTarefaDTO dto) throws Exception;
+    TarefaDTO cadastra(@Valid @RequestBody TarefaDTO dto) throws Exception;
 
-//    @RequestMapping(method = RequestMethod.GET)
-//    List<TemplateDTO> buscaTodos();
-//
-//    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-//    TemplateDTO busca(@PathVariable("id") Long id);
-//
-//    @RequestMapping(value = "/{id}", method = RequestMethod.PATCH)
-//    TemplateDTO altera(@Valid TemplateDTO dto, @PathVariable("id") Long id);
-//
-//    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-//    void deleta(@PathVariable("id") Long id);
+    @RequestMapping(method = RequestMethod.GET)
+    List<TarefaDTO> buscaTodos();
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    TarefaDTO busca(@PathVariable("id") Long id);
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.PATCH)
+    TarefaDTO altera(@Valid @RequestBody TarefaDTO dto, @PathVariable("id") Long id);
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    TarefaDTO deleta(@PathVariable("id") Long id);
 
 }

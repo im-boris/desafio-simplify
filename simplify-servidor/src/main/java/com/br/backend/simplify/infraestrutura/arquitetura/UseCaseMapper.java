@@ -1,11 +1,11 @@
 package com.br.backend.simplify.infraestrutura.arquitetura;
 
-import com.br.backend.simplify.arquitetura.IUseCase;
-import com.br.backend.simplify.pojo.contexto.Contexto;
+import com.br.backend.simplify.pojo.negocio.contexto.Contexto;
+import com.br.backend.simplify.adapters.arquitetura.IUseCase;
 import com.br.backend.simplify.pojo.negocio.tarefa.RespostaCadastraTarefaDTO;
-import com.br.backend.simplify.pojo.resposta.Resposta;
-import com.br.backend.simplify.tarefa.cases.ContextoCadastraTarefa;
-import com.br.backend.simplify.tarefa.cases.UseCaseCadastraTarefa;
+import com.br.backend.simplify.pojo.negocio.resposta.Resposta;
+import com.br.backend.simplify.tarefa.usecases.ContextoTesteArquitetura;
+import com.br.backend.simplify.tarefa.usecases.UseCaseTesteArquitetura;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public enum UseCaseMapper {
 
-    CADASTRA_TAREFA(1, new UseCaseCadastraTarefa(), new ContextoCadastraTarefa(), new RespostaCadastraTarefaDTO());
+    TESTE_ARQUITETURA(1, new UseCaseTesteArquitetura(), new ContextoTesteArquitetura(), new RespostaCadastraTarefaDTO());
 
 
     private Integer codigoRequisicao;

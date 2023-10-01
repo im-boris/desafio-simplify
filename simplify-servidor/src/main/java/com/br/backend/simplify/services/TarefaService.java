@@ -1,22 +1,42 @@
 package com.br.backend.simplify.services;
 
+import com.br.backend.simplify.adapters.tarefa.cases.ICRUDTarefaCase;
+import com.br.backend.simplify.pojo.negocio.tarefa.TarefaDTO;
 import com.br.backend.simplify.api.TarefaController;
-import com.br.backend.simplify.arquitetura.IUseCaseRunner;
-import com.br.backend.simplify.pojo.negocio.tarefa.RequisicaoCadastraTarefaDTO;
-import com.br.backend.simplify.pojo.negocio.tarefa.RespostaCadastraTarefaDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.util.List;
 
 @Service
 public class TarefaService implements TarefaController {
 
     @Autowired
-    private IUseCaseRunner useCaseRunner;
+    private ICRUDTarefaCase CRUDCase;
 
 
     @Override
-    public RespostaCadastraTarefaDTO cadastra(RequisicaoCadastraTarefaDTO dto) throws Exception {
-        return useCaseRunner.run(dto);
+    public TarefaDTO cadastra(TarefaDTO dto) {
+        return CRUDCase.cadastra(dto);
+    }
+
+    @Override
+    public List<TarefaDTO> buscaTodos() {
+        return CRUDCase.buscaTodos();
+    }
+
+    @Override
+    public TarefaDTO busca(Long id) {
+        return CRUDCase.busca(id);
+    }
+
+    @Override
+    public TarefaDTO altera(TarefaDTO dto, Long id) {
+        return CRUDCase.altera(dto, id);
+    }
+
+    @Override
+    public TarefaDTO deleta(Long id) {
+        return CRUDCase.deleta(id);
     }
 
 }

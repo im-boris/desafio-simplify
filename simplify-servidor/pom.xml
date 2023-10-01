@@ -11,12 +11,18 @@
 
     <artifactId>simplify-servidor</artifactId>
     <packaging>jar</packaging>
+
     <dependencies>
         <dependency>
             <groupId>com.br</groupId>
             <artifactId>simplify-adapters</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.br</groupId>
+            <artifactId>simplify-negocio</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.br</groupId>

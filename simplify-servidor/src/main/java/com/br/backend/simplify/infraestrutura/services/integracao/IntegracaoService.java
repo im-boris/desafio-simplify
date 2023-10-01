@@ -1,11 +1,11 @@
 package com.br.backend.simplify.infraestrutura.services.integracao;
 
-import com.br.backend.simplify.arquitetura.DefinicaoIntegracao;
-import com.br.backend.simplify.arquitetura.IIntegracao;
-import com.br.backend.simplify.arquitetura.IUseCase;
-import com.br.backend.simplify.arquitetura.IntegracaoFluxo;
-import com.br.backend.simplify.pojo.contexto.Contexto;
-import com.br.backend.simplify.pojo.integracao.IntegracaoEnum;
+import com.br.backend.simplify.adapters.arquitetura.DefinicaoIntegracao;
+import com.br.backend.simplify.adapters.arquitetura.IIntegracao;
+import com.br.backend.simplify.pojo.negocio.contexto.Contexto;
+import com.br.backend.simplify.pojo.negocio.integracao.IntegracaoEnum;
+import com.br.backend.simplify.adapters.arquitetura.IUseCase;
+import com.br.backend.simplify.adapters.arquitetura.IntegracaoFluxo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
