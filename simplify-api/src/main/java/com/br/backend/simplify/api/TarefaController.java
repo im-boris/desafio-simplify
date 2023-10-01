@@ -1,7 +1,7 @@
 package com.br.backend.simplify.api;
 
-import com.br.backend.simplify.pojo.negocio.tarefa.testearquitetura.RequisicaoCadastraPokemonDTO;
-import com.br.backend.simplify.pojo.negocio.tarefa.testearquitetura.RespostaCadastraPokemonDTO;
+import com.br.backend.simplify.pojo.negocio.pokemon.cadastrapokemon.RequisicaoCadastraPokemonDTO;
+import com.br.backend.simplify.pojo.negocio.pokemon.cadastrapokemon.RespostaCadastraPokemonDTO;
 import com.br.backend.simplify.pojo.negocio.tarefa.TarefaDTO;
 import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;

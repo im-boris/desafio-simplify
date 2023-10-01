@@ -7,7 +7,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum IntegracaoEnum {
 
-    INTEGRACAO_TESTE("IntegracaoTeste");
+    INTEGRACAO_PESQUISA_POKEMON_BY_ID("IntegracaoPesquisaPokemonByID");
 
     private final String nome;
 }

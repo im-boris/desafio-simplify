@@ -2,10 +2,10 @@ package com.br.backend.simplify.infraestrutura.arquitetura;
 
 import com.br.backend.simplify.pojo.negocio.contexto.Contexto;
 import com.br.backend.simplify.adapters.arquitetura.IUseCase;
-import com.br.backend.simplify.pojo.negocio.tarefa.testearquitetura.RespostaCadastraPokemonDTO;
+import com.br.backend.simplify.pojo.negocio.pokemon.cadastrapokemon.RespostaCadastraPokemonDTO;
 import com.br.backend.simplify.pojo.negocio.resposta.Resposta;
-import com.br.backend.simplify.pojo.negocio.tarefa.testearquitetura.ContextoCadastraPokemon;
-import com.br.backend.simplify.tarefa.usecases.UseCaseCadastraPokemon;
+import com.br.backend.simplify.pokemon.usecases.ContextoCadastraPokemon;
+import com.br.backend.simplify.pokemon.usecases.UseCaseCadastraPokemon;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
