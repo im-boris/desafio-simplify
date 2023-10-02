@@ -45,9 +45,4 @@ public class TarefaService implements TarefaController {
         return CRUDCase.deleta(id);
     }
 
-    @Override
-    public RespostaCadastraPokemonDTO teste(RequisicaoCadastraPokemonDTO requisicao) throws Exception {
-        return runner.run(requisicao);
-    }
-
 }

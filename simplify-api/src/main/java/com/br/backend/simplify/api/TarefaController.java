@@ -1,7 +1,5 @@
 package com.br.backend.simplify.api;
 
-import com.br.backend.simplify.pojo.negocio.pokemon.cadastrapokemon.RequisicaoCadastraPokemonDTO;
-import com.br.backend.simplify.pojo.negocio.pokemon.cadastrapokemon.RespostaCadastraPokemonDTO;
 import com.br.backend.simplify.pojo.negocio.tarefa.TarefaDTO;
 import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;
@@ -25,8 +23,5 @@ public interface TarefaController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     TarefaDTO deleta(@PathVariable("id") Long id);
-
-    @RequestMapping(value = "/teste", method = RequestMethod.POST)
-    RespostaCadastraPokemonDTO teste(@Valid @RequestBody RequisicaoCadastraPokemonDTO requisicao) throws Exception;
 
 }
