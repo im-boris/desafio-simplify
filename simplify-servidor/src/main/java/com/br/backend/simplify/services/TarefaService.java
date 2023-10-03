@@ -1,9 +1,6 @@
 package com.br.backend.simplify.services;
 
-import com.br.backend.simplify.adapters.arquitetura.IUseCaseRunner;
 import com.br.backend.simplify.adapters.tarefa.cases.ICRUDTarefaCase;
-import com.br.backend.simplify.pojo.negocio.pokemon.cadastrapokemon.RequisicaoCadastraPokemonDTO;
-import com.br.backend.simplify.pojo.negocio.pokemon.cadastrapokemon.RespostaCadastraPokemonDTO;
 import com.br.backend.simplify.pojo.negocio.tarefa.TarefaDTO;
 import com.br.backend.simplify.api.TarefaController;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +12,6 @@ public class TarefaService implements TarefaController {
 
     @Autowired
     private ICRUDTarefaCase CRUDCase;
-
-    @Autowired
-    private IUseCaseRunner runner;
 
 
     @Override
